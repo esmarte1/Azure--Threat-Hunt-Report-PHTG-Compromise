@@ -145,10 +145,9 @@ DeviceProcessEvents
 ```kusto
 DeviceFileEvents
 | where DeviceName == "azwks-phtg-02"
-| where TimeGenerated between (datetime(2025-12-12T00:00:00Z) .. datetime(2025-12-12T23:59:59Z))
-| where InitiatingProcessAccountName == "vmadmin"
-| where ActionType == "FileCreated" or ActionType == "FileModified"
-| project TimeGenerated, ActionType, FileName, FolderPath
+| where TimeGenerated between (datetime(2025-12-11T00:00:00Z) .. datetime(2025-12-13T23:59:59Z))
+| where FileName has "notes_sarah.txt"
+| project TimeGenerated, ActionType, FileName, FolderPath, InitiatingProcessAccountName
 | order by TimeGenerated asc
 ```
 > ![File Discovery Hash Generation](Screenshot%202026-04-30%20234817.png)
