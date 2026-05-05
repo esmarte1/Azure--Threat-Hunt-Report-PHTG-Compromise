@@ -151,7 +151,7 @@ DeviceFileEvents
 | order by TimeGenerated asc
 ```
 > ![File Discovery Hash Generation](Screenshot%202026-04-30%20234817.png)
-> *Telemetry capturing the true SHA256 payload hash prior to rapid renaming execution.*
+> *File discovery showing the compromised account interacting with the targeted notes_sarah.txt blueprint*
 >
 > ![Interactive GUI Execution](Screenshot%202026-04-30%20225106.png)
 > *Process execution logs tracking the attacker's manual launch of `notepad.exe`.*
