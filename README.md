@@ -1,5 +1,6 @@
 # Threat Hunt Executive Report
 ## Incident: PHTG External RDP Compromise
+![Hacker Concept](hacker-banner.png)
 
 **Target Environment:** PHTG Azure Infrastructure (HealthCloud Deployment)
 **Compromised Asset:** `AZwks-phtf-02` (Windows 10 Enterprise)
