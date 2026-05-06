@@ -228,7 +228,7 @@ DeviceNetworkEvents
 | project country_name, continent_name
 | distinct country_name, continent_name
 ```
-> ![C2 IP Geographic Enrichment](C2%20IP%20Geographic%20Enrichment.png)
+ ![C2 IP Geographic Enrichment](C2%20IP%20Geographic%20Enrichment.png)
 > *Chronological sequence of `FileRenamed` events, tracking the payload from its double-extension state to its final executable form, `PHTG.exe`.*
 
 ---
