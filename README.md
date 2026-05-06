@@ -123,7 +123,7 @@ DeviceLogonEvents
 | summarize Count = count() by country_name
 | order by Count desc
 ```
-> ![Authentication Baseline](Screenshot%202026-04-30%20141019.png)
+> ![Successful Logins by Country](successful-logins-by-country.png)
 > *Highlights the distribution of `LogonType` events, isolating interactive and network authentication attempts.*
 
 ### Phase 4: Dec 12, 2025 (02:43 AM UTC) | Post-Exploitation & Internal Discovery
