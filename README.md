@@ -125,7 +125,7 @@ DeviceLogonEvents
 | summarize Count = count() by country_name
 | order by Count desc
 ```
->![Successful Logins by Country](image_766d17.png)
+> ![Successful Logins by Country](successful-logins-by-country.png)
 > *Identifies the geographic origin of successful logins, confirming unauthorized access from a non-standard location (Uruguay).*
 
 ### Phase 4: Dec 12, 2025 (02:43 AM UTC) | Post-Exploitation & Internal Discovery
