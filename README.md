@@ -109,7 +109,8 @@ DeviceLogonEvents
 | where RemoteIPType == "Public"
 | summarize Count = count() by ActionType
 ```
-
+![Logon Outcomes](Logon%20Outcomes%20(Success%20vs.%20Failure).png)
+> *Highlights the stark ratio of failed authentication attempts to successful logins, a strong indicator of brute-force activity against the exposed RDP port.*
 **KQL Query: Countries Behind Successful Logins**
 ```kusto
 let GeoTable = externaldata(network:string, geoname_id:long, continent_code:string,
