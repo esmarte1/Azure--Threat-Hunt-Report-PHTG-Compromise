@@ -98,7 +98,7 @@ DeviceLogonEvents
 | where RemoteIPType == "Public"
 | summarize Count = count() by LogonType
 ```
-![Logon Type Distribution](image_d9eef4.png)
+> ![Logon Type Distribution](Screenshot%202026-04-30%20141019.png)
 > *Highlights the distribution of LogonType events, isolating interactive and network authentication attempts.*
 
 **KQL Query: Logon Outcomes (Success vs. Failure)**
