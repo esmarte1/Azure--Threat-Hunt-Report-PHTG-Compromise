@@ -176,6 +176,7 @@ DeviceFileEvents
 | order by TimeGenerated asc
 ```
 ![Full Rename Chain](Full%20Rename%20Chain%20for%20Payload%20(SHA256%20Pivot).png)
+>*Chronological sequence of FileRenamed events, tracking the payload from its double-extension state to its final executable form, PHTG.exe.*
 **KQL Query: Retrieve Defender Detection Details and Operating Mode**
 ```kusto
 DeviceEvents
@@ -229,7 +230,7 @@ DeviceNetworkEvents
 | distinct country_name, continent_name
 ```
  ![C2 IP Geographic Enrichment](C2%20IP%20Geographic%20Enrichment.png)
-> *Chronological sequence of `FileRenamed` events, tracking the payload from its double-extension state to its final executable form, `PHTG.exe`.*
+> *Geographic enrichment of the C2 beacon IP (173.244.55.130), confirming the attacker's infrastructure originated from Uruguay, South America.*
 
 ---
 
