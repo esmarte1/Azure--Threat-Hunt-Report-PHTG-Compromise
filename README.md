@@ -125,8 +125,8 @@ DeviceLogonEvents
 | summarize Count = count() by country_name
 | order by Count desc
 ```
-> ![Successful Logins by Country](successful-logins-by-country.png)
-> *Highlights the distribution of `LogonType` events, isolating interactive and network authentication attempts.*
+![Successful Logins by Country](image_766d17.png)
+> *Identifies the geographic origin of successful logins, confirming unauthorized access from a non-standard location (Uruguay).*
 
 ### Phase 4: Dec 12, 2025 (02:43 AM UTC) | Post-Exploitation & Internal Discovery
 Upon gaining interactive GUI access, the attacker separated themselves from automated machine noise by initiating human-driven actions.
