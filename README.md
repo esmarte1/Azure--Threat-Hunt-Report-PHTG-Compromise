@@ -177,6 +177,7 @@ DeviceFileEvents
 ```
 ![Full Rename Chain](Full%20Rename%20Chain%20for%20Payload%20(SHA256%20Pivot).png)
 >*Chronological sequence of FileRenamed events, tracking the payload from its double-extension state to its final executable form, PHTG.exe.*
+
 **KQL Query: Retrieve Defender Detection Details and Operating Mode**
 ```kusto
 DeviceEvents
