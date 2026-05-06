@@ -9,7 +9,7 @@
 ---
 
 ### Executive Summary
-In December 2025, PHTG suffered a targeted ransomware attack resulting from a critical operational security (OpSec) failure. A cloud engineer posted a workstation screenshot to LinkedIn, inadvertently exposing the Azure management portal, the target virtual machine hostname (`AZwks-phtf-02`), and its public IP address (`74.249.82.162`). 
+In December 2025, PHTG suffered a targeted ransomware attack resulting from a critical operational security (OpSec) failure. A cloud engineer posted a workstation screenshot to LinkedIn, inadvertently exposing the Azure management portal, the target virtual machine hostname (`AZwks-phtg-02`), and its public IP address (`74.249.82.162`). 
 
 Threat actors leveraged this actionable exposure to conduct distributed RDP scanning and credential stuffing across 17 countries. The attacker successfully compromised the highly privileged `vmadminusername` account using infrastructure based in Uruguay. After gaining interactive access, the threat actor conducted internal reconnaissance, forced Microsoft Defender into Passive Mode to bypass EDR, and deployed a Meterpreter payload disguised as legitimate HealthCloud infrastructure. The attack culminated in the establishment of persistent Command & Control (C2) and ransomware execution.
 
