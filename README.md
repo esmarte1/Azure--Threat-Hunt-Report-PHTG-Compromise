@@ -175,7 +175,7 @@ DeviceFileEvents
 | project TimeGenerated, ActionType, FileName, PreviousFileName, FolderPath
 | order by TimeGenerated asc
 ```
-
+![Full Rename Chain](Full%20Rename%20Chain%20for%20Payload%20(SHA256%20Pivot).png)
 **KQL Query: Retrieve Defender Detection Details and Operating Mode**
 ```kusto
 DeviceEvents
@@ -186,7 +186,7 @@ DeviceEvents
 | extend ParsedFields = parse_json(AdditionalFields)
 | project TimeGenerated, AdditionalFields
 ```
-
+![Defender Detection Details](Retrieve%20Defender%20Detection%20Details%20and%20Operating%20Mode.png)
 ### Phase 6: Dec 13, 2025 (10:16 AM UTC) | Persistence, C2, and Ransomware
 With EDR bypassed, the attacker moved to their final, persistent phase of execution.
 * **Final Camouflage:** The payload was renamed to `PHTG.exe` and moved into the legitimate service directory: `C:\ProgramData\PHTG\HealthCloud\`.
@@ -202,7 +202,7 @@ DeviceProcessEvents
 | project TimeGenerated, FileName, ProcessCommandLine, InitiatingProcessFileName, InitiatingProcessCommandLine
 | order by TimeGenerated asc
 ```
-
+![Payload Execution Timeline](Payload%20Execution%20Timeline%20(Both%20Phases).png)
 **KQL Query: C2 Network Beacon from Payload**
 ```kusto
 DeviceNetworkEvents
@@ -213,7 +213,7 @@ DeviceNetworkEvents
 | project TimeGenerated, RemoteIP, RemotePort, ActionType, InitiatingProcessFileName
 | order by TimeGenerated asc
 ```
-
+![C2 Network Beacon](C2%20Network%20Beacon%20from%20Payload.png)
 **KQL Query: C2 IP Geographic Enrichment**
 ```kusto
 let GeoTable = externaldata(network:string, geoname_id:long, continent_code:string,
@@ -228,7 +228,7 @@ DeviceNetworkEvents
 | project country_name, continent_name
 | distinct country_name, continent_name
 ```
-> ![Payload Renaming Sequence](Screenshot%202026-05-01%20083226.png)
+> ![C2 IP Geographic Enrichment](C2%20IP%20Geographic%20Enrichment.png)
 > *Chronological sequence of `FileRenamed` events, tracking the payload from its double-extension state to its final executable form, `PHTG.exe`.*
 
 ---
