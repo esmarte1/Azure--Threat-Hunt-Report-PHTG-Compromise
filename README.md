@@ -253,10 +253,10 @@ DeviceNetworkEvents
 
 ## Summary and Response Taken
 
-**Incident Summary:** An exposed public IP address on an Azure Virtual Machine (`AZwks-phtf-02`) led to an automated, distributed RDP brute-force attack. Threat actors successfully compromised the local `vmadminusername` administrator account originating from a Uruguayan subnet. Upon gaining interactive access, the attacker utilized a double-extension file masquerade, forced Microsoft Defender into Passive Mode, and deployed a Meterpreter reverse shell. The attacker then established persistence within a newly created service directory and executed ransomware. 
+**Incident Summary:** An exposed public IP address on an Azure Virtual Machine (`AZwks-phtg-02`) led to an automated, distributed RDP brute-force attack. Threat actors successfully compromised the local `vmadminusername` administrator account originating from a Uruguayan subnet. Upon gaining interactive access, the attacker utilized a double-extension file masquerade, forced Microsoft Defender into Passive Mode, and deployed a Meterpreter reverse shell. The attacker then established persistence within a newly created service directory and executed ransomware. 
 
 **Immediate Containment & Eradication Response:**
-1. **Network Isolation:** The compromised virtual machine (`AZwks-phtf-02`) was immediately isolated from the PHTG virtual network to prevent lateral movement.
+1. **Network Isolation:** The compromised virtual machine (`AZwks-phtg-02`) was immediately isolated from the PHTG virtual network to prevent lateral movement.
 2. **Infrastructure Blocking:** The entire attacker-controlled `/28` Uruguayan subnet (`173.244.55.128/28`) was blocked at the perimeter firewall and Azure NSGs.
 3. **Identity Containment:** The compromised `vmadminusername` account was disabled, and all active sessions were terminated.
 4. **Attack Surface Reduction:** The public IP address (`74.249.82.162`) was disassociated from the virtual machine, effectively closing port 3389 to the public internet.
