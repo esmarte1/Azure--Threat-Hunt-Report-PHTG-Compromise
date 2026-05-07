@@ -2,10 +2,12 @@
 ## Incident: PHTG External RDP Compromise
 ![Threat Hunt Concept Banner](hacker-banner-masked.jpg)
 
-> **Target Environment:** PHTG Azure Infrastructure (HealthCloud Deployment)  
-> **Compromised Asset:** azwks-phtg-02 (Windows 10 Enterprise)  
-> **Initial Access Vector:** Exposed Public RDP via OSINT Leak  
+> **Target Environment:** PHTG Azure Infrastructure (HealthCloud Deployment)
+> **Compromised Asset:** azwks-phtg-02 (Windows 10 Enterprise)
+> **Initial Access Vector:** Exposed Public RDP via OSINT Leak
 > **Malware Family:** Trojan:Win32/Meterpreter.RPZ!MTB
+> **Author:** Evan Smarte
+> **Date:** May 2026
 ---
 
 ### Executive Summary
