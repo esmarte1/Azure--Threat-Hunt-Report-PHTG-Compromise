@@ -244,7 +244,8 @@ DeviceNetworkEvents
 * **Compromised Account:** `vmadminusername`
 * **C2 Port:** `4444` (Default Meterpreter)
 * **Payload SHA256:** `224462ce5e3304e3fd0875eeabc829810a894911e3d4091d4e60e67a2687e695`
-* **Malicious Files:** * `Sarah_Chen_Notes.exe.Txt` (Staging)
+* **Malicious Files:**
+* * `Sarah_Chen_Notes.exe.Txt` (Staging)
     * `PHTG.exe` (Ransomware/C2)
     * `C:\ProgramData\PHTG\HealthCloud\Launch.bat` (Persistence)
 
