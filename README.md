@@ -143,6 +143,7 @@ DeviceProcessEvents
 | project TimeGenerated, FileName, ProcessCommandLine, InitiatingProcessFileName
 | order by TimeGenerated asc
 ```
+> *Note: Process execution logs for this window were no longer available in the retention period at time of hunt.*
 
 **KQL Query: File Access Events by Attacker Account**
 ```kusto
@@ -190,6 +191,8 @@ DeviceEvents
 | project TimeGenerated, AdditionalFields
 ```
 ![Defender Detection Details](Retrieve%20Defender%20Detection%20Details%20and%20Operating%20Mode.png)
+> *Three detections of Trojan:Win32/Meterpreter.RPZ!MTB reported under "Windows Defender Antivirus passive mode," confirming the attacker successfully switched Defender from Active to Passive Mode — allowing the payload to execute without quarantine.*
+
 ### Phase 6: Dec 13, 2025 (10:16 AM UTC) | Persistence, C2, and Ransomware
 With EDR bypassed, the attacker moved to their final, persistent phase of execution.
 * **Final Camouflage:** The payload was renamed to `PHTG.exe` and moved into the legitimate service directory: `C:\ProgramData\PHTG\HealthCloud\`.
