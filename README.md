@@ -143,7 +143,7 @@ DeviceProcessEvents
 | project TimeGenerated, FileName, ProcessCommandLine, InitiatingProcessFileName
 | order by TimeGenerated asc
 ```
-> *Note: Process execution logs for this window were no longer available in the retention period at time of hunt.*
+> *Note: Process execution logs confirming this activity were captured during the live hunt but not screenshotted. Results were no longer available upon returning to collect evidence, likely due to log retention limits in the lab environment.*
 
 **KQL Query: File Access Events by Attacker Account**
 ```kusto
